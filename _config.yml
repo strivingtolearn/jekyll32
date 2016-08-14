@@ -1,6 +1,7 @@
 kramdown:
   input: GFM
   hard_wrap: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 gems:
   - jekyll-coffeescript
   - jekyll-paginate
