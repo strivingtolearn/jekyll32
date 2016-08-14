@@ -5,7 +5,9 @@ kramdown:
 gems:
   - jekyll-coffeescript
   - jekyll-paginate
+  - jekyll-feed
+
 baseurl: "/jekyll32" # the subpath of your site, e.g. /blog
 description: "Miscellaneous nuggets of knowledge and interest."
 title: "Bits of tedium"
-url: "https://strivingtolearn.github.io"
+#url: "https://strivingtolearn.github.io"
