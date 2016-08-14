@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/jekyll32/css/main.css">
+    <title>Highlighting</title>
+  </head>
+
+
+  <body>
+
+    
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h2 id="ruby">Ruby</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<h2 id="bash">Bash</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="c"># Comment</span>
+<span class="nb">trap </span>something ERR
+<span class="k">for </span>i <span class="k">in</span> <span class="o">{</span>1..10<span class="o">}</span>; <span class="k">do
+  </span><span class="nb">echo</span> <span class="s2">"Hello, world"</span>
+<span class="k">done
+</span>sed -i <span class="s1">'/something/d'</span> file
+grep <span class="s2">"^neat$"</span> /path/to/file</code></pre></figure>
+
+<h2 id="sh">SH</h2>
+
+<figure class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c">#!/bin/sh</span>
+<span class="c"># Comment</span>
+<span class="nb">trap </span>something ERR
+<span class="k">for </span>i <span class="k">in</span> <span class="o">{</span>1..10<span class="o">}</span>; <span class="k">do
+  </span><span class="nb">echo</span> <span class="s2">"Hello, world"</span>
+<span class="k">done
+</span>sed -i <span class="s1">'/something/d'</span> file
+grep <span class="s2">"^neat$"</span> /path/to/file</code></pre></figure>
+
+<h2 id="ksh">KSH</h2>
+
+<figure class="highlight"><pre><code class="language-ksh" data-lang="ksh"><span class="c">#!/bin/ksh</span>
+<span class="c"># Comment</span>
+<span class="nb">trap </span>something ERR
+<span class="k">for </span>i <span class="k">in</span> <span class="o">{</span>1..10<span class="o">}</span>; <span class="k">do
+  </span><span class="nb">echo</span> <span class="s2">"Hello, world"</span>
+<span class="k">done
+</span>sed -i <span class="s1">'/something/d'</span> file
+grep <span class="s2">"^neat$"</span> /path/to/file</code></pre></figure>
+
+<h2 id="csh">CSH</h2>
+
+<figure class="highlight"><pre><code class="language-csh" data-lang="csh">#!/bin/csh
+# Comment
+trap something ERR
+for i in {1..10}; do
+  echo "Hello, world"
+done
+sed -i '/something/d' file
+grep "^neat$" /path/to/file</code></pre></figure>
+
+<h2 id="c">C</h2>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello, world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="c-1">C++</h2>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello, World."</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="html">HTML</h2>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Title<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;style&gt;body</span> <span class="p">{</span><span class="nl">width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;}</span><span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"application/javascript"</span><span class="nt">&gt;</span>
+      <span class="kd">function</span> <span class="nx">$init</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="kc">true</span><span class="p">;}</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"test"</span> <span class="na">id=</span><span class="s">'title'</span><span class="nt">&gt;</span>Hello, world<span class="nt">&lt;/p&gt;</span>
+    <span class="c">&lt;!-- here goes the rest of the page --&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<h2 id="css">CSS</h2>
+
+<h2 id="perl">Perl</h2>
+
+<h2 id="make">Make</h2>
+
+<h2 id="diff">Diff</h2>
+
+<h2 id="python">Python</h2>
+
+<h2 id="php">PHP</h2>
+
+<h2 id="sql">SQL</h2>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">select</span> <span class="n">name</span><span class="p">,</span> <span class="n">ip</span><span class="p">,</span> <span class="n">environment</span>
+	<span class="k">FROM</span> <span class="n">hosts</span>
+	<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">environment</span><span class="p">,</span> <span class="n">name</span><span class="p">;</span>
+<span class="k">select</span> <span class="n">name</span><span class="p">,</span> <span class="n">updated_at</span><span class="p">,</span> <span class="n">timediff</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span><span class="n">created_at</span><span class="p">)</span>
+  <span class="k">from</span> <span class="n">hosts</span>
+  <span class="k">where</span> <span class="n">updated_at</span> <span class="o">&lt;=</span> <span class="n">date_sub</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="n">interval</span> <span class="mi">24</span> <span class="n">hour</span><span class="p">);</span>
+<span class="k">select</span> <span class="k">distinct</span> <span class="n">fact_values</span><span class="p">.</span><span class="n">value</span>
+  <span class="k">from</span> <span class="n">fact_names</span>
+  <span class="k">join</span> <span class="n">fact_values</span>
+    <span class="k">on</span> <span class="n">fact_values</span><span class="p">.</span><span class="n">fact_name_id</span><span class="o">=</span><span class="n">fact_names</span><span class="p">.</span><span class="n">id</span>
+  <span class="k">where</span> <span class="n">fact_names</span><span class="p">.</span><span class="n">name</span><span class="o">=</span><span class="nv">"roles"</span>
+  <span class="k">order</span> <span class="k">by</span> <span class="n">value</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="k">FROM</span> <span class="k">c</span> <span class="k">JOIN</span> <span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">)</span> <span class="k">ON</span> <span class="k">c</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">id</span> <span class="k">AND</span> <span class="n">d</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">fid</span><span class="p">;</span>
+<span class="k">SELECT</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="k">FROM</span> <span class="k">c</span> <span class="k">JOIN</span> <span class="p">(</span><span class="n">d</span> <span class="k">CROSS</span> <span class="k">JOIN</span> <span class="n">e</span><span class="p">)</span> <span class="k">ON</span> <span class="k">c</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">id</span> <span class="k">AND</span> <span class="n">d</span><span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">fid</span><span class="p">;</span>
+<span class="err">\</span><span class="n">d</span> <span class="n">pg_attribute</span></code></pre></figure>
+
+<h2 id="mysql">MySQL</h2>
+
+<figure class="highlight"><pre><code class="language-mysql" data-lang="mysql">select name, ip, environment
+	FROM hosts
+	ORDER BY environment, name;
+select name, updated_at, timediff(now(),created_at)
+  from hosts
+  where updated_at &lt;= date_sub(now(), interval 24 hour);
+select distinct fact_values.value
+  from fact_names
+  join fact_values
+    on fact_values.fact_name_id=fact_names.id
+  where fact_names.name="roles"
+  order by value;
+SELECT a, b FROM c JOIN (d,e) ON c.id = d.id AND d.id = e.fid;
+SELECT a, b FROM c JOIN (d CROSS JOIN e) ON c.id = d.id AND d.id = e.fid;
+\d pg_attribute</code></pre></figure>
+
+<h2 id="postgresql">PostgreSQL</h2>
+
+<figure class="highlight"><pre><code class="language-postgresql" data-lang="postgresql">select name, ip, environment
+	FROM hosts
+	ORDER BY environment, name;
+select name, updated_at, timediff(now(),created_at)
+  from hosts
+  where updated_at &lt;= date_sub(now(), interval 24 hour);
+select distinct fact_values.value
+  from fact_names
+  join fact_values
+    on fact_values.fact_name_id=fact_names.id
+  where fact_names.name="roles"
+  order by value;
+SELECT a, b FROM c JOIN (d,e) ON c.id = d.id AND d.id = e.fid;
+SELECT a, b FROM c JOIN (d CROSS JOIN e) ON c.id = d.id AND d.id = e.fid;
+\d pg_attribute</code></pre></figure>
+
+<h2 id="text-1">Text 1</h2>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">set nocompatible
+set backspace=2
+set ruler
+set background=dark
+syntax on
+let loaded_matchparen=1
+map &lt;F6&gt; &lt;Esc&gt;:set spell spelllang=en_us&lt;CR&gt;
+map &lt;F7&gt; &lt;Esc&gt;:set nospell&lt;CR&gt;</code></pre></figure>
+
+<h2 id="text-2">Text 2</h2>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">$ head /etc/hosts
+#
+127.0.0.1	localhost.localdomain		localhost
+#192.168.13.10	localhost.localdomain</code></pre></figure>
+
+<h2 id="vim">ViM</h2>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="k">set</span> nocompatible
+<span class="k">set</span> backspace<span class="p">=</span><span class="m">2</span>
+<span class="k">set</span> ruler
+<span class="k">set</span> background<span class="p">=</span><span class="nb">dark</span>
+syntax <span class="k">on</span>
+<span class="k">let</span> loaded_matchparen<span class="p">=</span><span class="m">1</span>
+map <span class="p">&lt;</span>F6<span class="p">&gt;</span> <span class="p">&lt;</span>Esc<span class="p">&gt;:</span><span class="k">set</span> <span class="k">spell</span> spelllang<span class="p">=</span>en_us<span class="p">&lt;</span>CR<span class="p">&gt;</span>
+map <span class="p">&lt;</span>F7<span class="p">&gt;</span> <span class="p">&lt;</span>Esc<span class="p">&gt;:</span><span class="k">set</span> nospell<span class="p">&lt;</span>CR<span class="p">&gt;</span></code></pre></figure>
+
+<h2 id="awk">AWK?</h2>
+
+<figure class="highlight"><pre><code class="language-awk" data-lang="awk">awk 'BEGIN{print "Hello World"}'
+echo "" | awk 'BEGIN{print "Hello World"}'
+echo "Hello World" | awk '{print $0}'</code></pre></figure>
+
+<h2 id="console-neat">Console (neat!)</h2>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="w">$ </span><span class="nc">cat</span><span class="kv"> /etc/vim/vimrc
+</span>set nocompatible
+set backspace=2
+set ruler
+set background=dark
+syntax on
+let loaded_matchparen=1
+map &lt;F6&gt; &lt;Esc&gt;:set spell spelllang=en_us&lt;CR&gt;
+<span class="err">map &lt;F7&gt; &lt;Esc&gt;:set nospell&lt;CR&gt;</span></code></pre></figure>
+
+
+      </div>
+    </div>
+
+    
+
+  </body>
+
+</html>
+
