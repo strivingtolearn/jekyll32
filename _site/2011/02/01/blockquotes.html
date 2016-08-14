@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Blockquotes</title>
+  </head>
+
+
+  <body>
+
+    
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h2 id="single-input-line-wrapping-as-needed">Single input line (wrapping as needed)</h2>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</code></pre></figure>
+
+<h3 id="renders-as">Renders as:</h3>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+</blockquote>
+
+<h2 id="multiple-input-lines-forcing-the-wrapping">Multiple input lines (forcing the wrapping)</h2>
+
+<p>This just isn’t worth the effort to attempt markdown syntax as you will have to
+also use liquid’s remove tag to strip markdown’s p tags. Just use straight html.</p>
+
+<pre>
+&lt;blockquote&gt;Lorem ipsum dolor sit amet,&lt;/blockquote&gt;
+&lt;blockquote&gt;consectetur adipiscing elit,&lt;/blockquote&gt;
+&lt;blockquote&gt;sed do eiusmod tempor incididunt&lt;/blockquote&gt;
+</pre>
+
+<h3 id="renders-as-1">Renders as:</h3>
+
+<blockquote>Lorem ipsum dolor sit amet,</blockquote>
+<blockquote>consectetur adipiscing elit,</blockquote>
+<blockquote>sed do eiusmod tempor incididunt</blockquote>
+
+<p></p>
+
+<h3 id="for-you-really-crazy-bastards">For you really crazy bastards:</h3>
+
+<pre>
+{{ "&gt; Lorem ipsum dolor sit amet," | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" }}
+{{ "&gt; consectetur adipiscing elit," | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" }}
+{{ "&gt; sed do eiusmod tempor incididunt" | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" }}
+</pre>
+
+<h3 id="renders-as-2">Renders as:</h3>
+
+<blockquote>
+  Lorem ipsum dolor sit amet,
+</blockquote>
+
+<blockquote>
+  consectetur adipiscing elit,
+</blockquote>
+
+<blockquote>
+  sed do eiusmod tempor incididunt
+</blockquote>
+
+<!-- vim: set tw=80 ts=2 sw=2 et: -->
+
+      </div>
+    </div>
+
+    
+
+  </body>
+
+</html>
+

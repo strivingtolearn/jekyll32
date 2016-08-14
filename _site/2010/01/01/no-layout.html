@@ -1,0 +1,37 @@
+<h1 id="dont-forget-the-layout">Don’t forget the layout!</h1>
+
+<p>This is what it looks like when the <strong><em>layout</em></strong> attribute is not defined or
+points to a non-existent layout file.</p>
+
+<p><strong><em>layout</em></strong> can be set in a <a href="https://jekyllrb.com/docs/configuration/">configuration
+file</a> (generally <code class="highlighter-rouge">_config.yml</code>) or in
+a YAML block referred to as <a href="https://jekyllrb.com/docs/frontmatter/">Front
+Matter</a> in individual pages.</p>
+
+<p>‘single’ and “double” quotes may even be broken depending on your browser, its
+settings, or the smart quote settings for your chosen markdown engine.</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">Inside a codeblock, "quotes" and 'quotes' seem to work just fine, though.</code></pre></figure>
+
+<h2 id="configuration-examples">Configuration Examples</h2>
+
+<h4 id="configyml">_config.yml</h4>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">defaults</span><span class="pi">:</span>
+  <span class="pi">-</span>
+    <span class="s">scope</span><span class="pi">:</span>
+      <span class="s">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+      <span class="s">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">posts"</span>
+    <span class="s">values</span><span class="pi">:</span>
+      <span class="s">layout</span><span class="pi">:</span> <span class="s2">"</span><span class="s">default"</span>
+<span class="s">&lt;...&gt;</span></code></pre></figure>
+
+<h4 id="front-matter">Front Matter</h4>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">---
+layout: "default"
+---
+
+&lt;...&gt;</code></pre></figure>
+
+<!-- vim: set tw=80 ts=2 sw=2 et: -->

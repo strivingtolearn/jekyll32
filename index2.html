@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+<!-- vim: set tw=80 ts=2 sw=2 et: -->
