@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Github's [markdown doc](https://guides.github.com/features/mastering-markdown/) will FOOL you!

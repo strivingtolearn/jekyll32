@@ -5,8 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/jekyll32/css/main.css">
-    <title>Title doesn&#39;t match the file name</title>
+    <meta name="description" content="The title, if added to the FrontMatter, like so:">
+
+  <link rel="canonical" href="/jekyll32/2010/03/02/override-title.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="/jekyll32/feed.xml">
+  <link rel="stylesheet" href="/jekyll32/css/main.css">
+
+  <title>Title doesn&#39;t match the file name</title>
   </head>
 
 
@@ -16,7 +21,15 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <p>The title, if added to the <a href="https://jekyllrb.com/docs/frontmatter/">Front
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Title doesn't match the file name</h1>
+    <p class="post-meta"><time datetime="2010-03-02T00:00:00-05:00" itemprop="datePublished">Mar 2, 2010</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>The title, if added to the <a href="https://jekyllrb.com/docs/frontmatter/">Front
 Matter</a>, like so:</p>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">---
@@ -25,6 +38,10 @@ title: Doesn't match the file name
 
 <p>Prevents autogeneration based on the filename. For example, this page is named
 <code class="highlighter-rouge">_posts/2010-03-02-override-title.md</code> and is not the same as the title.</p>
+
+  </div>
+
+</article>
 
       </div>
     </div>

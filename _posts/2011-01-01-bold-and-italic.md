@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 <!-- I escape the unmatched underscores and asterisks because it breaks my vim

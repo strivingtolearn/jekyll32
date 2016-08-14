@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 ## Single input line (wrapping as needed)
