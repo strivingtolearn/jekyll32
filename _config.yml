@@ -7,3 +7,4 @@ gems:
   - jekyll-paginate
 baseurl: "/jekyll32" # the subpath of your site, e.g. /blog
 description: "Miscellaneous nuggets of knowledge and interest."
+title: "Bits of tedium"
